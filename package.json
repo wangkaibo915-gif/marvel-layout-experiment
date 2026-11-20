@@ -1,0 +1,14 @@
+{
+  "name": "marvel-layout-experiment",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pixel-perfect HTML/CSS reproduction of the Pixso Ironman frame with BackstopJS and Galen layout tests",
+  "scripts": {
+    "serve": "python3 -m http.server 4173",
+    "backstop:reference": "backstop reference --config=backstop.json",
+    "backstop:test": "backstop test --config=backstop.json"
+  },
+  "devDependencies": {
+    "backstopjs": "^6.3.25"
+  }
+}

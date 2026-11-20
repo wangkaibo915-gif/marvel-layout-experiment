@@ -1,0 +1,297 @@
+@font-face {
+  font-family: "Manrope";
+  src: url("assets/fonts/Manrope-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("assets/fonts/Manrope-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("assets/fonts/Manrope-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("assets/fonts/Manrope-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 800;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Akira Expanded";
+  src: url("assets/fonts/AkiraExpandedDemo.woff") format("woff");
+  font-style: normal;
+  font-weight: 800;
+  font-display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+.stage {
+  position: relative;
+  width: 1440px;
+  height: 1024px;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* Header ------------------------------------------------------------------ */
+.topbar {
+  position: absolute;
+  left: 50px;
+  top: 60px;
+  width: 1340px;
+  height: 54.74px;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 136px;
+  height: 54.74px;
+  display: block;
+}
+
+.header-nav {
+  position: absolute;
+  left: 806px;
+  top: 13.37px;
+  width: 534px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon-group {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.icon-button {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #232323;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+/* Character navigation ---------------------------------------------------- */
+.character-nav {
+  position: absolute;
+  left: 50px;
+  top: 390px;
+  width: 218px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.character-link {
+  display: block;
+  height: 33px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #000;
+}
+
+.character-link.is-muted {
+  opacity: 0.35;
+}
+
+.character-link.is-active {
+  color: #640808;
+  opacity: 1;
+}
+
+/* Hero artwork ------------------------------------------------------------ */
+.hero-strip {
+  position: absolute;
+  left: 330px;
+  top: 0;
+  width: 500px;
+  height: 1024px;
+  overflow: hidden;
+  background: linear-gradient(206.03deg, #e4512f 0%, #640808 100%);
+}
+
+.hero-noise {
+  position: absolute;
+  inset: 0;
+  background-image: url("assets/noise-pixso.png");
+  background-repeat: repeat;
+  background-size: 500px 1024px;
+  mix-blend-mode: soft-light;
+}
+
+.hero-glow {
+  position: absolute;
+  left: 68px;
+  top: 90px;
+  width: 721px;
+  height: 1161px;
+  opacity: 0.25;
+  background-image: url("assets/ellipse-glow.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  mix-blend-mode: soft-light;
+}
+
+.hero-character {
+  position: absolute;
+  left: 189px;
+  top: 140px;
+  width: 729px;
+  height: 817.649px;
+  display: block;
+}
+
+/* Copy -------------------------------------------------------------------- */
+.title {
+  position: absolute;
+  left: 866px;
+  top: 205px;
+  width: 524px;
+  height: 74px;
+  margin: 0;
+  font-family: "Akira Expanded", sans-serif;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 74px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #640808;
+}
+
+.description {
+  position: absolute;
+  left: 866px;
+  top: 304px;
+  width: 524px;
+  height: 245px;
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  letter-spacing: 0.6px;
+  color: #000;
+  opacity: 0.7;
+}
+
+.buy-button {
+  position: absolute;
+  left: 866px;
+  top: 669px;
+  width: 171px;
+  height: 57px;
+  border-radius: 12px;
+  background: #640808;
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* Slider controls --------------------------------------------------------- */
+.swipe {
+  position: absolute;
+  left: 924px;
+  top: 888px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.swipe-arrow {
+  display: block;
+  width: 61.457px;
+  height: 10px;
+  flex: 0 0 auto;
+}
+
+.swipe-label {
+  width: 123px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #232323;
+  opacity: 0.5;
+  white-space: nowrap;
+}
+
+.progress {
+  position: absolute;
+  left: 866px;
+  top: 929px;
+  width: 388px;
+  height: 5px;
+  background: #000;
+  opacity: 0.1;
+}
+
+.slide-number {
+  position: absolute;
+  left: 1286px;
+  top: 841px;
+  width: 104px;
+  height: 109px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 109px;
+  color: #232323;
+}

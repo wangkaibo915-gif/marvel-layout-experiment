@@ -1,0 +1,3 @@
+# SourceCraft task for the experimental group
+
+Use the attached Pixso file `Marvel-Themed Merchandise Landing Page (Community).pix` and select the Iron Man slide. At a fixed 1440×1024 viewport, implement the slide in HTML/CSS. First obtain the slide's frame geometry, text styles, colors, and image placements through the configured Pixso MCP server; use Context7 via MCP for current BackstopJS and Galen Framework setup. Generate the page files and automated layout tests. Run BackstopJS against a direct Pixso export and run Galen. Record the actual MCP tool calls, revisions, results, and screenshots in `docs/ai-interaction-report.md`. Do not state that a test or MCP call occurred unless it did.

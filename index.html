@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1440, initial-scale=1">
+  <title>Iron Man — Marvel merchandise landing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="stage" id="stage" aria-label="Iron Man landing slide">
+    <header class="topbar" id="header">
+      <img class="logo" id="logo" src="assets/marvel.png" alt="Marvel" width="136" height="55">
+
+      <nav class="header-nav" id="header-nav" aria-label="Site navigation">
+        <button class="icon-button menu-button" id="menu-icon" type="button" aria-label="Open menu">
+          <svg class="icon" viewBox="0 0 28 28" aria-hidden="true">
+            <path d="M2 5h22M2 14h22M2 23h22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </button>
+
+        <div class="icon-group" id="icon-group">
+          <button class="icon-button" id="search-icon" type="button" aria-label="Search">
+            <svg class="icon" viewBox="0 0 28 28" aria-hidden="true">
+              <circle cx="12" cy="12" r="8.4" fill="none" stroke="currentColor" stroke-width="2.4"/>
+              <path d="M18.2 18.2 25 25" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+            </svg>
+          </button>
+
+          <button class="icon-button" id="cart-icon" type="button" aria-label="Cart">
+            <svg class="icon" viewBox="0 0 28 28" aria-hidden="true">
+              <path d="M3 5h3.2l3.1 13h12.2l2.9-9H7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+              <circle cx="11.2" cy="23" r="1.7" fill="currentColor"/>
+              <circle cx="21" cy="23" r="1.7" fill="currentColor"/>
+            </svg>
+          </button>
+
+          <button class="icon-button" id="profile-icon" type="button" aria-label="Profile">
+            <svg class="icon" viewBox="0 0 28 28" aria-hidden="true">
+              <circle cx="14" cy="8.2" r="4.4" fill="none" stroke="currentColor" stroke-width="2.2"/>
+              <path d="M4.8 24.2c0-5.1 4.1-8.4 9.2-8.4s9.2 3.3 9.2 8.4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <nav class="character-nav" id="character-nav" aria-label="Characters">
+      <a class="character-link is-muted" id="nav-hulk" href="#hulk">Hulk</a>
+      <a class="character-link is-active" id="nav-ironman" href="#ironman" aria-current="page">Ironman</a>
+      <a class="character-link is-muted" id="nav-deadpool" href="#deadpool">Deadpool</a>
+      <a class="character-link is-muted" id="nav-spiderman" href="#spiderman">Spiderman</a>
+      <a class="character-link is-muted" id="nav-captain-america" href="#captain-america">Captain America</a>
+    </nav>
+
+    <section class="hero" id="hero" aria-label="Iron Man artwork">
+      <div class="hero-strip" id="hero-strip">
+        <div class="hero-noise" id="hero-noise"></div>
+        <div class="hero-glow" id="hero-glow"></div>
+      </div>
+      <img class="hero-character" id="hero-character" src="assets/ironman.png" alt="Iron Man flying">
+    </section>
+
+    <section class="content" id="content" aria-labelledby="title">
+      <h1 class="title" id="title">ironman</h1>
+      <p class="description" id="description">Iron Man is a superhero appearing in American comic books published by Marvel Comics. Co-created by writer and editor Stan Lee, developed by scripter Larry Lieber, and designed by artists Don Heck and Jack Kirby, the character first appeared in Tales of Suspense #39 in 1962 (cover dated March 1963) and received his own title with Iron Man #1 in 1968.</p>
+      <a class="buy-button" id="buy-button" href="#buy-posters">Buy Posters</a>
+    </section>
+
+    <div class="swipe" id="swipe">
+      <svg class="swipe-arrow arrow-left" id="arrow-left" viewBox="0 0 61.457 10" aria-hidden="true">
+        <path d="M61.457 5H0M0 5l7.4-4.2M0 5l7.4 4.2" fill="none" stroke="#232323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="swipe-label" id="swipe-label">Swipe To Slide</span>
+      <svg class="swipe-arrow arrow-right" id="arrow-right" viewBox="0 0 61.457 10" aria-hidden="true">
+        <path d="M0 5h61.457M61.457 5l-7.4-4.2M61.457 5l-7.4 4.2" fill="none" stroke="#232323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+    <div class="progress" id="progress" aria-hidden="true"></div>
+    <div class="slide-number" id="slide-number" aria-label="Slide 2 of 5">02</div>
+  </main>
+</body>
+</html>

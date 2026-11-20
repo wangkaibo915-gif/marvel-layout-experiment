@@ -1,0 +1,6 @@
+{
+  "mcpServers": {
+    "context7": {"type": "stdio", "command": "npx", "args": ["-y", "@upstash/context7-mcp"]},
+    "pixso": {"type": "streamable-http", "url": "http://127.0.0.1:3667/mcp", "disabled": false}
+  }
+}

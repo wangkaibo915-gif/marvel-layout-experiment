@@ -1,0 +1,201 @@
+# Galen layout specification for the Pixso Ironman frame (1440x1024).
+# Geometry values are taken from the Pixso MCP node DSL of frame 10:142.
+
+@objects
+    stage              id  stage
+    header             id  header
+    logo               id  logo
+    header_nav         id  header-nav
+    menu_icon          id  menu-icon
+    icon_group         id  icon-group
+    search_icon        id  search-icon
+    cart_icon          id  cart-icon
+    profile_icon       id  profile-icon
+    character_nav      id  character-nav
+    nav_hulk           id  nav-hulk
+    nav_ironman        id  nav-ironman
+    nav_deadpool       id  nav-deadpool
+    nav_spiderman      id  nav-spiderman
+    nav_captain        id  nav-captain-america
+    hero_strip         id  hero-strip
+    hero_character     id  hero-character
+    title              id  title
+    description        id  description
+    buy_button         id  buy-button
+    swipe              id  swipe
+    arrow_left         id  arrow-left
+    swipe_label        id  swipe-label
+    arrow_right        id  arrow-right
+    progress           id  progress
+    slide_number       id  slide-number
+
+= Stage =
+    stage:
+        width 1440px
+        height 1024px
+
+= Header =
+    header:
+        inside stage 60px top, 50px left
+        width 1340px
+        height 54 to 56px
+
+    logo:
+        inside header 0px top left
+        width 136px
+        height 54 to 56px
+
+    header_nav:
+        inside header 13 to 14px top, 806px left
+        width 534px
+        height 28px
+
+    menu_icon:
+        inside header_nav 0px left
+        centered vertically inside header_nav
+        width 28px
+        height 28px
+
+    icon_group:
+        inside header_nav 0px right
+        centered vertically inside header_nav
+        width 144px
+        height 28px
+
+    search_icon:
+        inside icon_group 0px left
+        centered vertically inside icon_group
+        width 28px
+        height 28px
+
+    cart_icon:
+        right-of search_icon 30px
+        aligned horizontally all search_icon
+        width 28px
+        height 28px
+
+    profile_icon:
+        right-of cart_icon 30px
+        aligned horizontally all cart_icon
+        width 28px
+        height 28px
+
+= Character navigation =
+    character_nav:
+        inside stage 390px top, 50px left
+        width 218px
+        height 245px
+
+    nav_hulk:
+        inside character_nav 0px top left
+        width 218px
+        height 33px
+
+    nav_ironman:
+        below nav_hulk 20px
+        aligned vertically left nav_hulk
+        width 218px
+        height 33px
+
+    nav_deadpool:
+        below nav_ironman 20px
+        aligned vertically left nav_ironman
+        width 218px
+        height 33px
+
+    nav_spiderman:
+        below nav_deadpool 20px
+        aligned vertically left nav_deadpool
+        width 218px
+        height 33px
+
+    nav_captain:
+        below nav_spiderman 20px
+        aligned vertically left nav_spiderman
+        width 218px
+        height 33px
+
+    nav_ironman:
+        text matches "(?i)ironman"
+        css color is "rgb(100, 8, 8)"
+
+    nav_hulk:
+        text matches "(?i)hulk"
+        css opacity is "0.35"
+
+= Hero artwork =
+    hero_strip:
+        inside stage 0px top, 330px left
+        width 500px
+        height 1024px
+
+    hero_character:
+        inside stage 140px top, 189px left
+        width 729px
+        height 817 to 819px
+
+= Copy =
+    title:
+        inside stage 205px top, 866px left
+        width 524px
+        height 74px
+        text matches "(?i)ironman"
+        css font-size is "64px"
+        css text-transform is "uppercase"
+        css color is "rgb(100, 8, 8)"
+
+    description:
+        below title 25px
+        aligned vertically left title
+        width 524px
+        height 245px
+        text contains "Iron Man is a superhero"
+        css font-size is "20px"
+        css line-height is "35px"
+
+    buy_button:
+        inside stage 669px top, 866px left
+        width 171px
+        height 57px
+        text is "Buy Posters"
+        css font-size is "18px"
+        css border-radius is "12px"
+
+= Slider controls =
+    swipe:
+        inside stage 888px top, 924px left
+        height 25px
+
+    arrow_left:
+        inside swipe 0px left
+        centered vertically inside swipe
+        width 61 to 62px
+        height 10px
+
+    swipe_label:
+        right-of arrow_left 15px
+        centered vertically inside swipe
+        width 123px
+        height 25px
+        text is "Swipe To Slide"
+        css font-size is "18px"
+
+    arrow_right:
+        right-of swipe_label 15px
+        centered vertically inside swipe
+        width 61 to 62px
+        height 10px
+
+    progress:
+        inside stage 929px top, 866px left
+        width 388px
+        height 5px
+        css background-color is "rgb(0, 0, 0)"
+        css opacity is "0.1"
+
+    slide_number:
+        inside stage 841px top, 1286px left
+        width 104px
+        height 109px
+        text is "02"
+        css font-size is "80px"
